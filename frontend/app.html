@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries" defer></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"
+        defer></script>
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="app.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <div class="left">
-           <div class="form">
-            <form class="postForm">
-                <input type="number" name="paycheck" class="leftInput">
-                <input type="number" name="gasandfuel" class="leftInput">
-                <input type="number" name="fastfood" class="leftInput">
-                <input type="number" name="groceries" class="leftInput">
-                <input type="number" name="internet" class="leftInput">
-                <input type="number" name="mortgageRent" class="leftInput">
-                <input type="number" name="shopping" class="leftInput">
-                <button type="submit">Submit</button>
-            </form>
-           </div>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="container max-w-4xl bg-white p-8 rounded-lg shadow-lg flex">
+        <!-- right -->
+        <div class="w-1/2">
+            <div class="form">
+                <form class="postForm">
+                    <input type="number" name="paycheck"
+                        class="leftInput block w-full mb-4 p-2 border border-gray-300 rounded" placeholder="Paycheck">
+                    <input type="number" name="gasandfuel"
+                        class="leftInput block w-full mb-4 p-2 border border-gray-300 rounded"
+                        placeholder="Gas and Fuel">
+                    <input type="number" name="fastfood"
+                        class="leftInput block w-full mb-4 p-2 border border-gray-300 rounded" placeholder="Fast Food">
+                    <input type="number" name="groceries"
+                        class="leftInput block w-full mb-4 p-2 border border-gray-300 rounded" placeholder="Groceries">
+                    <input type="number" name="internet"
+                        class="leftInput block w-full mb-4 p-2 border border-gray-300 rounded" placeholder="Internet">
+                    <input type="number" name="mortgageRent"
+                        class="leftInput block w-full mb-4 p-2 border border-gray-300 rounded"
+                        placeholder="Mortgage/Rent">
+                    <input type="number" name="shopping"
+                        class="leftInput block w-full mb-4 p-2 border border-gray-300 rounded" placeholder="Shopping">
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+                </form>
+            </div>
         </div>
-        <div class="right">
-            <div class="card-holder">
-                
+        <!-- left -->
+        <div class="w-px bg-gray-300 h-full mx-6"></div>
+        <div class="w-1/2 flex flex-col gap-12 justify-center items-center">
+            <h1 class="text-2xl">Your Recommendation</h1>
+            <div class="card-holder ">
+                <div class="card flex mb-4">
+                    <h1 class="mr-4">Paycheck</h1>
+                    <p class="paycheck">0</p>
+                </div>
+                <div class="card flex mb-4">
+                    <h1 class="mr-4">Gas and Fuel</h1>
+                    <p class="gasandfuel">0</p>
+                </div>
+                <div class="card flex mb-4">
+                    <h1 class="mr-4">Fast Food</h1>
+                    <p class="fastfood">0</p>
+                </div>
+                <div class="card flex mb-4">
+                    <h1 class="mr-4">Groceries</h1>
+                    <p class="groceries">0</p>
+                </div>
+                <div class="card flex mb-4">
+                    <h1 class="mr-4">Internet</h1>
+                    <p class="internet">0</p>
+                </div>
+                <div class="card flex mb-4">
+                    <h1 class="mr-4">Mortgage/Rent</h1>
+                    <p class="mortgageRent">0</p>
+                </div>
+                <div class="card flex mb-4">
+                    <h1 class="mr-4">Shopping</h1>
+                    <p class="shopping">0</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
